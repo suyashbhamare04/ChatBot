@@ -1,0 +1,93 @@
+.jumboDiv {
+  width: 100%;
+  padding: 8%;
+  margin: auto;
+  display: flex;
+  margin-top: 3%;
+}
+
+.jumbotext {
+  width: 50%;
+  color: azure;
+  padding-top: 10px;
+}
+.jumbotext h1 {
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.jumbotext p {
+  line-height: 30px;
+  width: 85%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+.jumboVid {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumboDiv {
+    width: 100%;
+    padding: 10%;
+    display: grid;
+    margin-top: 15%;
+  }
+
+  .jumbotext {
+    width: 100%;
+    color: azure;
+    padding-top: 15px;
+  }
+  .jumbotext h1 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .jumbotext p {
+    line-height: 30px;
+    width: 100%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: large;
+    text-align: center;
+  }
+  .jumboVid {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .jumboDiv {
+    width: 100%;
+    padding: 10%;
+    display: grid;
+    margin-top: 3%;
+  }
+
+  .jumbotext {
+    width: 100%;
+    color: azure;
+    padding-top: 5px;
+  }
+  .jumbotext h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .jumbotext p {
+    line-height: 32px;
+    width: 100%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: large;
+    text-align: center;
+  }
+  .jumboVid {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}

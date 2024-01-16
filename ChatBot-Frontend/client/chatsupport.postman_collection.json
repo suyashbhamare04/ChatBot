@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "0064f3e6-190a-4d68-9eb8-5ddaec9466f4",
+		"name": "chatsupport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17641103"
+	},
+	"item": [
+		{
+			"name": "AddNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"demo123\",\n    \"password\":\"12345\",\n    \"email\":\"demo123@gmail.com\",\n    \"roles\":\"ROLE_USER\"\n}\n\n// {\n//     \"username\":\"admin1\",\n//     \"password\":\"12345\",\n//     \"email\":\"admin1@gmail.com\",\n//     \"roles\":\"ROLE_ADMIN\"\n// }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8097/auth/addNewUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"auth",
+						"addNewUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"demo123\",\n    \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8097/auth/generateToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"auth",
+						"generateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "questionswithanswer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vMTIzIiwiaWF0IjoxNzAxNjE1NTMyLCJleHAiOjE3MDE2MTkxMzJ9.gDcC8K1EZTo-63VP-A-zc_Mm4m_BisjB7TeRAWOtX_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "answersbyQuestionId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vMTIzIiwiaWF0IjoxNzAxNjE1NTMyLCJleHAiOjE3MDE2MTkxMzJ9.gDcC8K1EZTo-63VP-A-zc_Mm4m_BisjB7TeRAWOtX_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/api/answers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"api",
+						"answers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

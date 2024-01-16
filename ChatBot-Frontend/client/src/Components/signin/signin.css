@@ -1,0 +1,148 @@
+.mainsignin {
+  background-color: rgb(227, 234, 236);
+  height: 600px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 35px;
+  /* box-shadow: 7px 5px 30px #10d0f1; */
+}
+.signinImg {
+  width: 60%;
+  background: url("../../Assets/login.svg");
+  background-size: cover;
+  height: 485px;
+}
+.signinForm {
+  height: 600px;
+  width: 40%;
+  /* background-color: rgb(66, 176, 240); */
+  padding: 20px;
+  padding-top: 83px;
+}
+.signindetail {
+  margin-top: 20px;
+}
+.signinForm .input {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.signinForm .signinInputBtn1 {
+  margin-top: 30px;
+}
+.signinForm .signinInputBtn2 {
+  margin-top: 20px;
+  font-size: 13px;
+}
+.signinForm .signinInputBtn2 p {
+  margin-bottom: -1px;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .mainsignin {
+    height: 450px;
+    width: 90%;
+    text-align: center;
+  }
+  .signinImg {
+    display: none;
+  }
+  .signinForm {
+    height: 600px;
+    width: 80%;
+    padding: 10px;
+    padding-top: 90px;
+  }
+  .signindetail {
+    margin-top: 20px;
+  }
+  .signinForm .input {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .signinForm .signinInputBtn1 {
+    margin-top: 30px;
+  }
+  .signinForm .signinInputBtn2 {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .mainsignin {
+    height: 550px;
+    width: 60%;
+  }
+  .signinImg {
+    display: none;
+  }
+  .signinForm {
+    height: 600px;
+    width: 80%;
+    padding: 10px;
+    padding-top: 90px;
+  }
+  .signindetail {
+    margin-top: 20px;
+  }
+  .signinForm .input {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .signinForm .signinInputBtn1 {
+    margin-top: 30px;
+  }
+  .signupForm .signinInputBtn2 {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .mainsignin {
+    height: 550px;
+    width: 60%;
+  }
+  .signinImg {
+    width: 50%;
+    height: 350px;
+  }
+  .signinForm {
+    height: 500px;
+    width: 50%;
+    padding: 50px;
+    padding-top: 90px;
+  }
+  .signindetail {
+    margin-top: -30px;
+  }
+  .signinForm .input {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .signinForm .signinInputBtn1 {
+    margin-top: 30px;
+  }
+  .signupForm .signinInputBtn2 {
+    margin-top: 20px;
+  }
+}
